@@ -1,3 +1,134 @@
 body {
-  background: blanchedalmond;
+  background: blanchedalmond; 
+border:solid red;
+outline:1px solid bisque;
+}
+
+/******container box ****/
+   .container{
+  display:flex;
+    outline:1px ;
+  min-height:100vh;
+     /* height:155px;
+     width:255px; */
+    
+    background:#fefdfde6;
+    border:1px solid gray;
+    flex-direction: column; 
+    justify-content: space-betwee
+    
+ }
+
+
+
+/* ****** Container a phone **** */
+  .a{
+  outline:1px;
+  padding-top: px;
+  margin:5px;
+  text-align: center;
+  font-size:2em;
+  width:150px;
+  height:40px;
+  border:1px solid rgb(99, 43, 43);
+  background:#eee;
+
+ }
+   
+ .b{
+
+  font-size:2em;
+  width:150px;
+  height:150px;
+  border:1px solid grey; 
+  margin:5px;
+  background:#eee;
+  text-align: center; 
+}
+
+
+ .c{
+
+
+  font-size:2em; 
+  width:150px;
+  height:40px;
+  border:1px solid grey;
+  background:#eee;
+  margin:5px; 
+  text-align:center;
+
+
+}
+
+/*****************Desk-Top*************************************************/
+
+@media (min-width:600px){
+  body{
+  
+    background: blanchedalmond; 
+     border: 1px black;
+
+  }
+  
+  .container{ 
+    width: 300px;
+    height: 375px; 
+    min-height: 80vw; 
+    justify-content: space-evenly;
+    background:#eee ;
+    border:1px solid black;
+    
+    flex-direction: column;
+    flex-wrap: space-between;
+  }
+
+/* ***Container 'a' DeskTop*/
+
+  .a{
+     text-align: center;
+      font-size:2em;
+     width:285px;
+      height:65px; 
+    
+      padding-left:;
+      border:1px solid black;
+      background:rgb(240, 236, 236);
+      margin:5px;
+      margin-bottom: 0px;
+      
+  }
+
+
+/********* Container 'b' Desktop ****/
+ .b{
+
+  font-size:2em;
+  width:285px;
+  height:215px;
+  align-content: center;
+  flex-direction: ;
+  padding-left: ;
+  border:1px solid grey;
+   
+  margin:5px;
+  background:rgb(240, 236, 236);
+
+}
+
+/********** Container 'c' Desktop ***********/
+ .c{
+  margin:5px;
+  text-align: center;
+  font-size:2em; 
+  padding-left: ;
+  width:285px;
+  height:65px;
+  border:1px solid black;
+  background:rgb(240, 236, 236);
+
+
+} 
+
+
 }
