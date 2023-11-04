@@ -1,15 +1,14 @@
 body {
+
   background: papayawhip;
-border:solid red;
-outline:1px solid bisque;
+  outline:1px solid bisque;
 
 }
 /******container box ****/
    .container{
-  
+    min-height:95vh;
     outline:1px ;
     margin-top:0px;
-    width: 165px;
     height: 265px;
     padding: 3px; 
     background:#fefdfde6;
@@ -19,27 +18,80 @@ outline:1px solid bisque;
     justify-content:space-between;
  }
 
-/* ****** Container a phone **** */
-  .a{
-  outline:1px;
+/* ****** header mobil **** */
+
+.a{
+  outline:1px solid black;
   margin:5px;
   text-align: center;
   font-size:2em;
-  width:150px;
-  height:40px;
-  border:1px solid grey;
+  height:100px;
   background:#eee;
 
  }
-   
- .b{
-  
+/*************Main  ********************/
+.b{
   font-size:2em;
-  
+  min-height:;
+  outline:1px solid black;
+  height:350px;
+  background:#eee ;
+  text-align: center;
+  margin:5px;
+  margin-top:20px;
+}
+
+/***************Main  ********************/
+   .c,.d,.e{
+  height:80px;
   width:150px;
+  min-height:;
+  font-size:2em;
+  outline:1px;
   height:150px;
   border:1px solid grey; 
   margin:5px;
   background:#eee;
-  text-align: center; 
+  text-align: center;
+ }
+
+ /* ************footer  *********** */
+
+ .f{
+  outline:1px;
+  height:100px;
+  font-size: 2em;
+  border:1px solid black;
+  background:#eee;
+  text-align:center;
+  margin:5px;
+  flex-grow:1 ;
+
 }
+
+
+
+/*************Mobil*****************************/
+
+@media (min-width:600px){
+  body{
+  
+    background: blanchedalmond; 
+     border: 1px black;
+     min-height:100vw ;
+
+     /* *****Flex ************ */
+
+  }
+  .container{
+    display:flex;
+
+  }
+
+
+main footer{
+  display:flex;
+  flex-wrap: wrap-reverse;
+}
+}
+
