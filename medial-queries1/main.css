@@ -1,21 +1,26 @@
+*{
+  outline: 1px red;
+
+}
+
+
 body {
 background: blanchedalmond; 
 outline:1px solid bisque;
+text-align:center;
+font-size: 2em;
 }
 
 /******container box mobil****/
    .container{
+    height:100vh;
     
     outline:1px;
-     min-height:100vh; 
     background:#fefdfde6;
     border:1px solid black;
     display: flex;
     
     flex-direction: column; 
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
   }
 
 
@@ -23,7 +28,7 @@ outline:1px solid bisque;
 /* ****** Container a,c mobil ****/
 
 header, footer{
- flex: 1 0 25%;
+
 
  padding:5px;
  margin:10px;
@@ -32,6 +37,7 @@ header, footer{
  font-size:2em;
  text-align: center;
  background:rgb(219, 216, 216);
+ flex-grow: 1; 
 }
 
   
@@ -41,39 +47,40 @@ header, footer{
 
 
   main{ 
-  font-size:2em;
   margin: 10px;
-  /* min-height:60vh; */
-  flex: 1 0 50%;
+  min-height:65vh;
+  font-size:2em ;
+  
   border:1px solid grey; 
-  text-align: center;
   background:rgb(219, 216, 216); 
+  flex-grow: 5;
 
 }
 
 
 
 /*****************Desk-Top*************************************************/
- @media (max-width:768px){ 
+ @media (min-width:600px){ 
 
-  header,main,footer{
-    flex-basis:45%;
+  .container{
+  
     min-height:85vw ;
     flex-direction: row; 
-    justify-content: space-between;
+    flex-wrap: wrap;
+    
   }
+
+header{
+   width:100vw; 
+}
+footer{
+  display:flex;
+  flex-direction:column;
+  flex-wrap: wrap-reverse;
+}
             
   }
-  @media(max-width:480px){
-    header,main,footer{
-      flex-basis:100%;
 
-    }
-  }
-
-
-
-/********* Container 'b' Desktop ****/
 
 
 
