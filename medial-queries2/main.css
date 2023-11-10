@@ -1,97 +1,144 @@
-body {
 
-  background: papayawhip;
-  outline:1px solid bisque;
+/*******  outline border test *************/
 
-}
-/******container box ****/
-   .container{
-    min-height:95vh;
-    outline:1px ;
-    margin-top:0px;
-    height: 265px;
-    padding: 3px; 
-    background:#fefdfde6;
-    border:1px solid grey;
-    display:flex ;
-    flex-direction: column; 
-    justify-content:space-between;
- }
 
-/* ****** header mobil **** */
+/* *{
+  outline: 1px solid red;
+} */
+
+
+
+/********** background border for classes for testing only. Changed Colors to grey 
+               down further in code***/
 
 .a{
-  outline:1px solid black;
-  margin:5px;
-  text-align: center;
-  font-size:2em;
-  height:100px;
-  background:#eee;
+  background-color:brown ;
+}
 
- }
-/*************Main  ********************/
 .b{
-  font-size:2em;
-  min-height:;
-  outline:1px solid black;
-  height:350px;
-  background:#eee ;
-  text-align: center;
-  margin:5px;
-  margin-top:20px;
+ background-color: blue;
 }
 
-/***************Main  ********************/
-   .c,.d,.e{
-  height:80px;
-  width:150px;
-  min-height:;
-  font-size:2em;
-  outline:1px;
-  height:150px;
-  border:1px solid grey; 
-  margin:5px;
-  background:#eee;
-  text-align: center;
- }
 
- /* ************footer  *********** */
+.c{
+background-color:yellow ;
+}
 
- .f{
-  outline:1px;
-  height:100px;
-  font-size: 2em;
+.d{
+   background-color:orange ;
+}
+.e{
+  background-color:purple ;
+}
+
+
+.f{background-color: beige;
+
+}
+
+/***********************************************************************/
+
+
+
+/************ container set up for flex container and background *******/
+
+
+.container{
+  height:100vh;
+  background:light rgb(231, 224, 224); 
   border:1px solid black;
-  background:#eee;
-  text-align:center;
-  margin:5px;
-  flex-grow:1 ;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  background-color: #eee;
+
 
 }
 
 
 
-/*************Mobil*****************************/
+/************ main container set up inside of container for flex set up (and background}  **/
+
+.main{ 
+  margin: 10px;
+  border:5px;
+  min-height:65vh;
+  font-size:2em ;
+  background:;  #eee;
+  flex-grow: 2;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+
+}     
+
+/*****************  b box ...child of "main" ******/
+ .b{
+  width:100%;
+  flex-grow: 3;
+  margin: .2em;
+ min-height: 50vh;
+ border:5px;
+ text-align:center;
+ font-size:50px ;
+ background-color:rgb(219, 216, 216) ;
+} 
+
+   
+/******* a and f set up for the header and footer *****/
+
+ .a, .f{
+  flex-grow: 1;
+  margin: .4em;
+  min-height:10vh ;
+  border:5px;
+  text-align:center ;
+  font-size:50px ;
+  background-color: rgb(219, 216, 216);
+} 
+
+/************* c,d, and e boxes ... chidren of "main" container  ***/
+.c,.d,.e{
+  flex-grow: 1;
+  min-height: 15vh;
+  border:5px;
+  margin: 0.2em;
+  text-align: center;
+  font-size:50px ;
+  background-color:rgb(219, 216, 216) ;
+
+}
+
+
+/**********  Mdia queries for  Desktop view  *****************************/
+/***** will only run when width reaches 600 px or greater ****************/
+
+
 
 @media (min-width:600px){
-  body{
-  
-    background: blanchedalmond; 
-     border: 1px black;
-     min-height:100vw ;
-
-     /* *****Flex ************ */
-
-  }
   .container{
-    display:flex;
+      flex-direction: row;
+      flex-wrap:wrap; 
+
+      }
+
+  .a{
+    width:100vh;
+
+  }
+    .main{
+      width:60vh;
+      height:72.5vh;
+    }
+
+
+  .f{
+  
+  max-height:70vh;
+  width:20vw;
 
   }
 
-
-main footer{
-  display:flex;
-  flex-wrap: wrap-reverse;
 }
-}
-

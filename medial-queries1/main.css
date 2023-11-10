@@ -9,18 +9,20 @@ background: blanchedalmond;
 outline:1px solid bisque;
 text-align:center;
 font-size: 2em;
+margin: 0;
+
 }
 
 /******container box mobil****/
    .container{
     height:100vh;
-    
-    outline:1px;
+    outline:1px solid red;
     background:#fefdfde6;
     border:1px solid black;
     display: flex;
-    
-    flex-direction: column; 
+    flex-direction: column;
+    justify-content:space-between ;
+
   }
 
 
@@ -28,11 +30,8 @@ font-size: 2em;
 /* ****** Container a,c mobil ****/
 
 header, footer{
-
-
  padding:5px;
  margin:10px;
- 
  border:1px solid grey;
  font-size:2em;
  text-align: center;
@@ -49,9 +48,8 @@ header, footer{
   main{ 
   margin: 10px;
   min-height:65vh;
-  font-size:2em ;
-  
-  border:1px solid grey; 
+  font-size: 2em ;
+  border: 1px solid grey; 
   background:rgb(219, 216, 216); 
   flex-grow: 5;
 
@@ -73,11 +71,7 @@ header, footer{
 header{
    width:100vw; 
 }
-footer{
-  display:flex;
-  flex-direction:column;
-  flex-wrap: wrap-reverse;
-}
+
             
   }
 

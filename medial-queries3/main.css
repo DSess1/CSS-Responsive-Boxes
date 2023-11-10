@@ -24,13 +24,12 @@ body {
 
 /* ****** header section  **** */
     .a{
-min-height:;
 outline:1px solid black;
 margin:5px;
 text-align: center;
 font-size:2em;
-width:;
-height:100px;
+width:100%;
+height:10vh;
 
 background:#eee;
 
